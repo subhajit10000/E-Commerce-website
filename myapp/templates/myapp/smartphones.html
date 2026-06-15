@@ -1,0 +1,274 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+
+<title>Smartphones</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'index-page' %}" >HOME</a></li>
+                    <li><a href="{% url 'product-page' %}">PRODUCTS</a></li>
+                    <li class="nav-item dropdown">
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          CATEGORY
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="{% url 'smartphones-page' %}">Smartphones</a>
+                          <a class="dropdown-item" href="{% url 'home_appliances-page' %}">Home Appliances</a>
+                          <a class="dropdown-item" href="{% url 'camera-page' %}">Camera</a>
+                          <a class="dropdown-item" href="{% url 'other_electronic_gadget-page' %}">Others Electronic Gadget</a>
+                          <a class="dropdown-item" href="{% url 'iot_components-page' %}">IoT Components</a>
+                          <a class="dropdown-item" href="{% url 'laps_tab-page' %}">Laptop & Tablet</a>
+                          <a class="dropdown-item" href="{% url 'watch-page' %}">Watches</a>
+
+
+                        </div>
+                      </div>
+                    <li><a href="{% url 'contact-page' %}">CONTACT</a></li>
+                    
+
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search Products">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'myapp/css/mob1.jpg' %}" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'myapp/css/mob2.jpg' %}" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'myapp/css/mob3.jpg' %}" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/szf6.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Samsung Galaxy Z Flip 6</h4>
+                  <p class="card-text">₹85,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/s22u.jfif' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Galaxy S22 Ultra</h4>
+                  <p class="card-text">₹1,65,599</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ip16.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Iphone 16 128GB </h4>
+                  <p class="card-text">₹72,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/rm9i.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">RealMe 9i</h4>
+                  <p class="card-text">₹13,499</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/oa76.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Oppo A76</h4>
+                  <p class="card-text">₹16,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+            
+            
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/iphone 13 pro.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">iphone 13 Pro</h4>
+                  <p class="card-text">₹65,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/r11p.jfif' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Realme 11 Pro</h4>
+                  <p class="card-text">₹23,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/oa57.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">OPPO A57</h4>
+                  <p class="card-text">₹12,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/vy50.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">VIVO Y50</h4>
+                  <p class="card-text">₹19,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/i13pm.jpeg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Iphone 13 Pro Max</h4>
+                  <p class="card-text">₹1,79,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/oa5.jfif' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">OPPO A5</h4>
+                  <p class="card-text">₹15,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/vz6.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">VIVO Z6</h4>
+                  <p class="card-text">₹11,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/i13.jpeg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Iphone 13</h4>
+                  <p class="card-text">₹49,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/r13c.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Realme 13C</h4>
+                  <p class="card-text">₹8,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/i13red.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Iphone 13 Pro RED</h4>
+                  <p class="card-text">₹59,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/pc51.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">POCO C51</h4>
+                  <p class="card-text">₹5,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/sgzf5.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Samsung Galaxy Z Flip 5</h4>
+                  <p class="card-text">₹99,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/gs22a.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Samsung Galaxy S22 Ultra</h4>
+                  <p class="card-text">₹84,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/1+ce3.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">One Plus CE3</h4>
+                  <p class="card-text">₹24,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ip13.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Iphone 13 Blue</h4>
+                  <p class="card-text">₹49,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+          
+             
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

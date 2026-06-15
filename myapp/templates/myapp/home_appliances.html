@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+
+<title>Home Appliances</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'index-page' %}" >HOME</a></li>
+                    <li><a href="{% url 'product-page' %}">PRODUCTS</a></li>
+                    <li class="nav-item dropdown">
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          CATEGORY
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="{% url 'smartphones-page' %}">Smartphones</a>
+                          <a class="dropdown-item" href="{% url 'home_appliances-page' %}">Home Appliances</a>
+                          <a class="dropdown-item" href="{% url 'camera-page' %}">Camera</a>
+                          <a class="dropdown-item" href="{% url 'other_electronic_gadget-page' %}">Others Electronic Gadget</a>
+                          <a class="dropdown-item" href="{% url 'iot_components-page' %}">IoT Components</a>
+                          <a class="dropdown-item" href="{% url 'laps_tab-page' %}">Laptop & Tablet</a>
+                          <a class="dropdown-item" href="{% url 'watch-page' %}">Watches</a>
+
+
+                        </div>
+                      </div>
+                    <li><a href="{% url 'contact-page' %}">CONTACT</a></li>
+                    
+
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search Products">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'myapp/css/hc1.webp' %}" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'myapp/css/hc2.webp' %}" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'myapp/css/hc3.webp' %}" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+
+
+
+            <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/tv.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Samsung 32 Inch HD Ready Smart LED TV</h4>
+                  <p class="card-text">₹14,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/wm.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Klj652 Fully Automatic Whirlpool Washing Machine 9 Kg, Silver</h4>
+                  <p class="card-text">₹47,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ac.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">7 In 1 Convertible 1 Ton 3 Star Inverter Split Ac Temperature Sensor 2025 Model</h4>
+                  <p class="card-text">₹28,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ino.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Philips HD4928/01 Induction Cooktop</h4>
+                  <p class="card-text">₹3,499</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/fridge.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Whirlpool 200 L 3 Star Direct-Cool Single Door Refrigerator 72113 MAGIC PRO ROY 3S</h4>
+                  <p class="card-text">₹17,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/iron.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Philips DST0820/20 1250 W Steam Iron</h4>
+                  <p class="card-text">₹1,499</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/kch.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Whirlpool 60 cm 1100 m³/HR Auto-Clean Curved Glass Kitchen Chimney</h4>
+                  <p class="card-text">₹13,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/mo.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Samsung 23 L Grill Microwave Oven</h4>
+                  <p class="card-text">₹8,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/cf.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Orient Electric Zeno 1200mm BLDC Ceiling Fan with Remote </h4>
+                  <p class="card-text">₹2,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/mg.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Lifelong Mixer Grinder with 4 Jars</h4>
+                  <p class="card-text">₹1,499</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/tl.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">VRCT 50W Electric Table Lamp with Attached Pen Stand</h4>
+                  <p class="card-text">₹399</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/tp.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Antique Candlestick Rotary Dial Telephonery /Vintage</h4>
+                  <p class="card-text">₹6,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/gj.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title"> 10 L Automatic Storage Water Geyser I 5 Star BEE Rated Automatic Water Heater</h4>
+                  <p class="card-text">₹2,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ms.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Tronica Black King Series 3500W 5.1 Channel Bluetooth Home Theater System With Remote</h4>
+                  <p class="card-text">₹2,099</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/c.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Ajanta Abstract Quartz Wall Clock (32 cm x 32 cm x 3.5 cm, White)</h4>
+                  <p class="card-text">₹1,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+             
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ek.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Prestige Electric Kettle PKOSS 1.5Ltr 1500watts</h4>
+                  <p class="card-text">₹699</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+
+<title>other electronic gadget</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'index-page' %}" >HOME</a></li>
+                    <li><a href="{% url 'product-page' %}">PRODUCTS</a></li>
+                    <li class="nav-item dropdown">
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          CATEGORY
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="{% url 'smartphones-page' %}">Smartphones</a>
+                          <a class="dropdown-item" href="{% url 'home_appliances-page' %}">Home Appliances</a>
+                          <a class="dropdown-item" href="{% url 'camera-page' %}">Camera</a>
+                          <a class="dropdown-item" href="{% url 'other_electronic_gadget-page' %}">Others Electronic Gadget</a>
+                          <a class="dropdown-item" href="{% url 'iot_components-page' %}">IoT Components</a>
+                          <a class="dropdown-item" href="{% url 'laps_tab-page' %}">Laptop & Tablet</a>
+                          <a class="dropdown-item" href="{% url 'watch-page' %}">Watches</a>
+
+
+                        </div>
+                      </div>
+                    <li><a href="{% url 'contact-page' %}">CONTACT</a></li>
+                    
+
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search Products">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{% static 'myapp/css/11.jpg' %}" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'myapp/css/22.jpg' %}" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{% static 'myapp/css/33.jpg' %}" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+
+
+
+              <div class="card" style="width:250px">
+                  <img class="card-img-top" src="{% static 'myapp/css/hp.webp' %}" alt="Card image">
+                  <div class="card-body">
+                    <h4 class="card-title">boAt Airdopes 161/163 with ASAP Charge & 40 HRS Playback Bluetooth</h4>
+                    <p class="card-text">₹999</p>
+                    <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                  </div>
+                </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/tm.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">UZAN Ns-216 Rechargeable Cordless Beard Trimmer for Men (Orange)</h4>
+                  <p class="card-text">₹299</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ms1.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Dezful Rechargeable M108 Bluetooth Mouse Wireless Optical Gaming Mouse  (Bluetooth, 2.4GHz Wireless, Black, Multicolor)</h4>
+                  <p class="card-text">₹549</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ncm.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">TVSE Electronics Automatic Count Note Counting Machine(Counting Speed - 1200 notes/min)</h4>
+                  <p class="card-text">₹6,199</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/hpp.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">HP Smart All In One 529 Multi-function Color Ink Tank Printer for Print/Scan/Copy</h4>
+                  <p class="card-text">₹10,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/lc.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">HP 65W AC Laptops Charger Adapter 4.5mm for HP Pavilion Black </h4>
+                  <p class="card-text">₹3,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/sd4.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">SAMSUNG EVO Plus 64 GB MicroSDXC Class 10 160 MB/s Memory Card  (With Adapter)</h4>
+                  <p class="card-text">₹599</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/mu.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">iBELL FM700BT Portable Radio with Bluetooth Speaker, USBSDMP3 Player & Dynamic Speaker 3 Band, Brown FM Radio</h4>
+                  <p class="card-text">₹1,499</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/kb.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Ant Value FKBRI01 Ultra-Slim Compact USB Wired Keyboard</h4>
+                  <p class="card-text">₹999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/jbl.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">JBL Go Essential with Rich Bass, 5 Hrs Playtime, IPX7 Waterproof, Ultra Portable 3.1 W Bluetooth Speaker</h4>
+                  <p class="card-text">₹1,699</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/eb.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Portronics Power Plate 10 Extension Board with 4 Universal Sockets</h4>
+                  <p class="card-text">₹999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/whp.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">boAt Rockerz 110 with 40 HRS Playback, ENx Technology, Beast Mode & ASAP Charge Bluetooth  (Black, In the Ear)</h4>
+                  <p class="card-text">₹799</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/bpc.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Dr. Morepen BG03 with 50 Strips Glucometer  (Black & Grey)</h4>
+                  <p class="card-text">₹799</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/sc.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Calculator Model CT-512 Basic Color Black with Solar Calculator  (12 Digit)</h4>
+                  <p class="card-text">₹599</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/pjt.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Portable 1080p, 200-inch Screen Size, Quad Core, Auto Focus, Keystone, Bluetooth, Miracast Smart Projector</h4>
+                  <p class="card-text">₹10,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/tp1.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">HOLA TF 500 Corded Landline Phone  (Black 1)</h4>
+                  <p class="card-text">₹599</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+             
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

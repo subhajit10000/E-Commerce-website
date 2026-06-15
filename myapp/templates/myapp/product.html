@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+
+<title>Products</title>
+<style>
+  
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'index-page' %}" >HOME</a></li>
+                    <li><a href="{% url 'product-page' %}" class="active">PRODUCTS</a></li>
+                    <li class="nav-item dropdown">
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          CATEGORY
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="{% url 'smartphones-page' %}">Smartphones</a>
+                          <a class="dropdown-item" href="{% url 'home_appliances-page' %}">Home Appliances</a>
+                          <a class="dropdown-item" href="{% url 'camera-page' %}">Camera</a>
+                          <a class="dropdown-item" href="{% url 'other_electronic_gadget-page' %}">Others Electronic Gadget</a>
+                          <a class="dropdown-item" href="{% url 'iot_components-page' %}">IoT Components</a>
+                          <a class="dropdown-item" href="{% url 'laps_tab-page' %}">Laptop & Tablet</a>
+                          <a class="dropdown-item" href="{% url 'watch-page' %}">Watches</a>
+
+
+                        </div>
+                      </div>
+                    <li><a href="{% url 'contact-page' %}">CONTACT</a></li>
+                    
+
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search Products">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'myapp/css/11.jpg' %}" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'myapp/css/22.jpg' %}" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'myapp/css/33.jpg' %}" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+
+
+
+            <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ip.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Apple iPhone 13 Pro (Sierra Blue, 1 TB)</h4>
+                  <p class="card-text">₹1,69,900</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/asw.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Apple Watch Series 10 GPS 46mm Jet Black Aluminium with Sport Band</h4>
+                  <p class="card-text">₹49,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/dl.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">DELL 15 Intel Core i3 12th Gen 1215U - (8 GB/512 GB SSD/Windows 11 Home) 3520 Thin and Light Laptop  (15.6 inch, Carbon Black, 1.69 Kg, With MS Office)</h4>
+                  <p class="card-text">₹33,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/pb.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Mi 20000 mAh 18 W Power Bank  (Fast Charging for Mobile)</h4>
+                  <p class="card-text">₹2,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/pr8.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">LED TV</h4>
+                  <p class="card-text">₹49,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/dslr camera.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">DSLR Camera</h4>
+                  <p class="card-text">₹35,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/h1.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Bluetooth Headset</h4>
+                  <p class="card-text">₹6,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/a1.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Airpods</h4>
+                  <p class="card-text">₹7,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/pr1.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Washing Machine</h4>
+                  <p class="card-text">₹19,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/pr3.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Microwave</h4>
+                  <p class="card-text">₹6,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/pr6.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Refrigerator</h4>
+                  <p class="card-text">₹16,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/pr11.png' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Optical Mouse</h4>
+                  <p class="card-text">₹3,499</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/oppoa79.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">OPPO A79 5G (Mystery Black, 128 GB,8 GB RAM)</h4>
+                  <p class="card-text">₹10,539.00</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/sony.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Sony High Resolution Camera</h4>
+                  <p class="card-text">₹70,999.00</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/boat.jfif' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Boat Headphone</h4>
+                  <p class="card-text">₹9,999.00</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/iron.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Electric Iron</h4>
+                  <p class="card-text">₹999.00</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/exide.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Exide 12V Inverter Battery</h4>
+                  <p class="card-text">₹17,999.00</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/watch.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Samsung SmartWatch</h4>
+                  <p class="card-text">₹3,999.00</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/wired.jpg' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Wired Headphone With Mic</h4>
+                  <p class="card-text">₹9,999.00</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/kch.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Whirlpool 60 cm 1100 m³/HR Auto-Clean Curved Glass Kitchen Chimney</h4>
+                  <p class="card-text">₹13,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <br><br><br>
+
+          
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

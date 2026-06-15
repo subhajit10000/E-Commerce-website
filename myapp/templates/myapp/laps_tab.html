@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+
+<title>Camera</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'index-page' %}" >HOME</a></li>
+                    <li><a href="{% url 'product-page' %}" >PRODUCTS</a></li>
+                    <li class="nav-item dropdown">
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          CATEGORY
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="{% url 'smartphones-page' %}">Smartphones</a>
+                          <a class="dropdown-item" href="{% url 'home_appliances-page' %}">Home Appliances</a>
+                          <a class="dropdown-item" href="{% url 'camera-page' %}">Camera</a>
+                          <a class="dropdown-item" href="{% url 'other_electronic_gadget-page' %}">Others Electronic Gadget</a>
+                          <a class="dropdown-item" href="{% url 'iot_components-page' %}">IoT Components</a>
+                          <a class="dropdown-item" href="{% url 'laps_tab-page' %}">Laptop & Tablet</a>
+                          <a class="dropdown-item" href="{% url 'watch-page' %}">Watches</a>
+
+
+                        </div>
+                      </div>
+                    <li><a href="{% url 'contact-page' %}">CONTACT</a></li>
+                    
+
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search Products">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'myapp/css/cs3.webp' %}" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'myapp/css/cs4.jpg' %}" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'myapp/css/cs5.webp' %}" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+
+
+
+            <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/mbl.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Apple MacBook Air Apple M4 - (16 GB/512 GB SSD/macOS Sequoia) MW0X3HN/A  (13.6 inch, Silver, 1.24 kg)</h4>
+                  <p class="card-text">₹1,19,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ssl.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">SAMSUNG Galaxy Book4 Metal Intel Core i5 13th Gen 1335U - (16 GB/512 GB SSD/Windows 11 Home)</h4>
+                  <p class="card-text">₹57,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/sst.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">SAMSUNG Galaxy Tab A9+ 8 GB RAM 128 GB ROM 11.0 inch with Wi-Fi+5G Tablet (Graphite)</h4>
+                  <p class="card-text">₹24,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/dlp.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">DELL 15 Intel Core i3 12th Gen 1215U - (8 GB/512 GB SSD/Windows 11 Home) 3520 Thin and Light Laptop</h4>
+                  <p class="card-text">₹33,499</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              
+              <br><br><br>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/lp.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">CHUWI Intel Celeron Dual Core 11th Gen N4020 - (8 GB/256 GB SSD/Windows 11 Home) HeroBook Pro Laptop  (14.1 inch, Grey, 1.39 kg)</h4>
+                  <p class="card-text">₹17,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/rmp.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">realme Pad 2 Lite 4 GB RAM 128 GB ROM 11.0 inch with 4G Tablet (Space Grey)</h4> </h4>
+                  <p class="card-text">₹14,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                             
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/rmt.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">realme Pad 2 6 GB RAM 128 GB ROM 11.5 inch with 4G Tablet (Inspiration Green)</h4>
+                  <p class="card-text">₹17,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <br><br><br>
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/rmse.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">REDMI Pad SE 8 GB RAM 128 GB ROM 11.0 inch with Wi-Fi Only Tablet (Graphite Gray)</h4>
+                  <p class="card-text">₹14,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/glp.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">SAMSUNG Galaxy Book5 360 AI PC Full Metal Chasis Intel Core Ultra 5 226V</h4>
+                  <p class="card-text">₹1,14,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+                
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/acer.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Acer Aspire 3 Intel Celeron Dual Core N4500 - (8 GB/512 GB SSD/Windows 11 Home) A325-45 Thin and Light Laptop</h4>
+                  <p class="card-text">₹23,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/ipad.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Apple iPad (10th Gen) 64 GB ROM 10.9 inch with Wi-Fi Only (Silver)</h4>
+                  <p class="card-text">₹28,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+              
+              <div class="card" style="width:250px">
+                <img class="card-img-top" src="{% static 'myapp/css/mba.webp' %}" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Apple MacBook AIR Apple M2 - (16 GB/256 GB SSD/macOS Sequoia) MC7X4HN/A  (13.6 Inch, Midnight, 1.24 kg)</h4>
+                  <p class="card-text">₹76,999</p>
+                  <a href="#" class="btn btn-primary float-right">BUY NOW</a>
+                </div>
+              </div>
+             
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
